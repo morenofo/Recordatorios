@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5538500028E6AB1100100FE5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55384FFF28E6AB1100100FE5 /* LoginViewController.xib */; };
 		55600ED628D0F25E0038FE69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55600ED528D0F25E0038FE69 /* AppDelegate.swift */; };
 		55600ED828D0F25E0038FE69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55600ED728D0F25E0038FE69 /* SceneDelegate.swift */; };
 		55600EDA28D0F25E0038FE69 /* EntradaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55600ED928D0F25E0038FE69 /* EntradaViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		55384FFF28E6AB1100100FE5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		55600ED228D0F25E0038FE69 /* RecordatoriosProgramacion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordatoriosProgramacion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55600ED528D0F25E0038FE69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55600ED728D0F25E0038FE69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				55600EE028D0F25F0038FE69 /* LaunchScreen.storyboard */,
 				55600EE328D0F25F0038FE69 /* Info.plist */,
 				55AE5DDE28DEF98700550063 /* GoogleService-Info.plist */,
+				55384FFF28E6AB1100100FE5 /* LoginViewController.xib */,
 			);
 			path = RecordatoriosProgramacion;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5538500028E6AB1100100FE5 /* LoginViewController.xib in Resources */,
 				55600EE228D0F25F0038FE69 /* LaunchScreen.storyboard in Resources */,
 				55600EDF28D0F25F0038FE69 /* Assets.xcassets in Resources */,
 				55AE5DDF28DEF98800550063 /* GoogleService-Info.plist in Resources */,

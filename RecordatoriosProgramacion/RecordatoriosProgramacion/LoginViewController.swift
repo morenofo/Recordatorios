@@ -18,7 +18,7 @@ class LoginViewController: UIViewController {
    
     @IBOutlet weak var emailLoginTexfil: UITextField!
     
-    @IBOutlet weak var contraseñaLoginTexfil: UITextField!
+    @IBOutlet weak var provaiderLabelTexfield: UITextField!
     
     @IBOutlet weak var loginButton: UIButton!
     
@@ -46,16 +46,25 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 title = "inicio"
+        emailLoginTexfil.text = email
+        provaiderLabelTexfield.text = provaider.rawValue
 
     }
 
     @IBAction func entrarLoginButtonAction(_ sender: Any) {
 
+        switch provaider {
+        case .basic:
+            do { try Auth.auth().signOut()
+                navigationController?.popViewController(animated: true)
+            } catch {
+               
+            }
         
         }
     }
     
-
+}
 
    
     

@@ -88,56 +88,6 @@
             </objects>
             <point key="canvasLocation" x="984" y="-48"/>
         </scene>
-        <!--Login View Controller-->
-        <scene sceneID="1V0-lt-B43">
-            <objects>
-                <viewController id="e72-9j-by7" customClass="LoginViewController" customModule="RecordatoriosProgramacion" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="U6z-rM-OTL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zHa-Aa-TK9">
-                                <rect key="frame" x="16" y="60" width="382" height="118"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qjf-aq-gAL">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce tu contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gZL-1e-R0Q">
-                                        <rect key="frame" x="0.0" y="42" width="382" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pL-IN-P2t">
-                                        <rect key="frame" x="0.0" y="84" width="382" height="34"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Entrar"/>
-                                        <connections>
-                                            <action selector="entrarLoginButtonAction:" destination="e72-9j-by7" eventType="touchUpInside" id="nB4-sB-3Le"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="HYz-aw-CTN"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="zHa-Aa-TK9" firstAttribute="leading" secondItem="HYz-aw-CTN" secondAttribute="leading" constant="16" id="AV2-lr-Ll9"/>
-                            <constraint firstItem="zHa-Aa-TK9" firstAttribute="top" secondItem="HYz-aw-CTN" secondAttribute="top" constant="16" id="ih1-QS-DcS"/>
-                            <constraint firstItem="HYz-aw-CTN" firstAttribute="trailing" secondItem="zHa-Aa-TK9" secondAttribute="trailing" constant="16" id="oCt-Pz-BTw"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="contraseñaLoginTexfil" destination="gZL-1e-R0Q" id="eav-6u-Da6"/>
-                        <outlet property="emailLoginTexfil" destination="qjf-aq-gAL" id="hmu-qb-rF6"/>
-                        <outlet property="loginButton" destination="0pL-IN-P2t" id="o59-m4-3LM"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vRT-PS-tGj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1803" y="-79"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Drp-L1-YLe">
             <objects>
