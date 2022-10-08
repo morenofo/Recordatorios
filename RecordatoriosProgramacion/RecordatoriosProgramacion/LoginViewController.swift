@@ -8,9 +8,11 @@
 import UIKit
 //import FirebaseCore
 import FirebaseAuth
+import GoogleSignIn
 
 enum ProviderType: String {
     case basic
+    case google
 }
 
 class LoginViewController: UIViewController {
@@ -46,25 +48,44 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 title = "inicio"
+        navigationItem.setHidesBackButton(true, animated: false)
         emailLoginTexfil.text = email
         provaiderLabelTexfield.text = provaider.rawValue
+//        guardar datos
+        let defaults = UserDefaults.standard
+        defaults.set(email, forKey: "email")
+        defaults.set(provaider.rawValue, forKey: "provaider")
+        defaults.synchronize()
 
     }
 
     @IBAction func entrarLoginButtonAction(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "email")
+        defaults.removeObject(forKey: "provaider")
+        defaults.synchronize()
 
         switch provaider {
         case .basic:
-            do { try Auth.auth().signOut()
-                navigationController?.popViewController(animated: true)
-            } catch {
-               
-            }
+            firebaseLogOut()
+        case .google:
+            GIDSignIn.sharedInstance()?.signOut()
+            firebaseLogOut()
+        }
+        navigationController?.popViewController(animated: true)
+    }
+    private func firebaseLogOut() {
+        
+        do { try Auth.auth().signOut()
+            
+        } catch {
+           
+        }
         
         }
-    }
     
 }
+
 
    
     
